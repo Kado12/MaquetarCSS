@@ -7,7 +7,43 @@
       margin-right: 25px;
    }
 
-   .main-blog-principal .blog-principal-contact {
+   .main-blog-principal .blog-principal-contact,
+   .main-profile .blog-principal-contact {
       flex-direction: row;
+   }
+
+   .main-blogs {
+      padding: 20px 10%;
+   }
+
+   .main-profile .profile-section {
+      flex-direction: row;
+   }
+
+   .profile-section figure {
+      margin: 0 auto;
+      width: 150px;
+      height: 150px;
+   }
+
+   .profile-section div {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      justify-content: center;
+   }
+
+   .profile-project div {
+      display: flex;
+      gap: 15px;
+   }
+}
+
+@media (min-width : 1024px) {
+   .blogs-gallery .gallery-cards {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      height: 700px;
+      gap: 15px
    }
 }
