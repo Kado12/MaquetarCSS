@@ -336,7 +336,7 @@ main {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   font-size: 1.1rem;
+   font-size: 1.2rem;
 }
 
 .blog-principal-contact div div a {
@@ -374,7 +374,7 @@ main {
 }
 
 .profile-section div p {
-   font-size: 1.1rem;
+   font-size: 1.2rem;
 }
 
 .main-profile .profile-project {
@@ -399,7 +399,7 @@ main {
 }
 
 .profile-project div article p {
-   font-size: 1.1rem;
+   font-size: 1.2rem;
 }
 
 .main-profile .blog-principal-contact {
