@@ -262,6 +262,77 @@ header nav {
    height: 30px;
 }
 
+/* Main del blog.html */
+.main-blog-principal {
+   width: 100%;
+   padding: 0 15px;
+}
+
+.main-blog-principal .blog-principal-image {
+   width: 100%;
+   height: 300px;
+}
+
+.blog-principal-image img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.main-blog-principal .blog-principal-notice {
+   padding: 15px 5%;
+}
+
+.blog-principal-notice h3 {
+   font-size: 1.4rem;
+   margin-bottom: 16px;
+}
+
+.blog-principal-notice h2 {
+   font-size: 2.2rem;
+   margin-bottom: 20px;
+}
+
+.blog-principal-notice p {
+   font-size: 1.2rem;
+   margin-bottom: 5px;
+}
+
+.main-blog-principal .blog-principal-contact {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 15px;
+}
+
+.blog-principal-contact div {
+   width: 100%;
+   height: 80px;
+   display: grid;
+   grid-template-columns: .25fr .75fr;
+}
+
+.blog-principal-contact div figure {
+   width: 50px;
+   height: 50px;
+   place-self: center;
+}
+
+.blog-principal-contact div figure img {
+   width: 100%;
+   height: 100%;
+}
+
+.blog-principal-contact div div {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   font-size: 1.1rem;
+}
+
+.blog-principal-contact div div a {
+   text-decoration: underline;
+}
+
 /* Footer */
 
 footer {
@@ -283,14 +354,4 @@ footer .footer-details {
    display: flex;
    place-items: center;
    place-content: center;
-}
-
-@media (min-width : 768px) {
-   header .header-icons-container {
-      justify-content: flex-end;
-   }
-
-   .icons {
-      margin-right: 25px;
-   }
 }

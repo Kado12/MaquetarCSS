@@ -1,0 +1,13 @@
+@media (min-width : 768px) {
+   header .header-icons-container {
+      justify-content: flex-end;
+   }
+
+   .icons {
+      margin-right: 25px;
+   }
+
+   .main-blog-principal .blog-principal-contact {
+      flex-direction: row;
+   }
+}
