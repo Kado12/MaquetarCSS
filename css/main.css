@@ -1,0 +1,296 @@
+/* Variables y estilos globales */
+:root {
+   /* Colores */
+   --just-black: #000000;
+   --principal-green: #48cfad;
+   --just-white: #ffffff;
+   --grey: #22272D;
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   font-size: 62.5%;
+   font-family: 'Roboto Mono', monospace;
+}
+
+a {
+   text-decoration: none;
+   color: var(--just-black);
+}
+
+/* Header */
+header {
+   width: 100%;
+   height: 100px;
+   display: grid;
+   grid-template-rows: 1fr 1fr;
+}
+
+header .header-icons-container {
+   width: 100%;
+   height: 50px;
+   display: flex;
+   background-color: var(--principal-green);
+   justify-content: center;
+   align-items: center;
+}
+
+.header-icons-container .icons {
+   gap: 15px;
+   display: flex;
+   justify-content: space-around;
+}
+
+.icons a {
+   width: 25px;
+   height: 25px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   fill: var(--just-white);
+}
+
+.icons .facebook {
+   background-image: url("../assets/icons/facebook.svg");
+}
+
+.icons .twitter {
+   background-image: url("../assets/icons/twitter.svg");
+}
+
+.icons .instagram {
+   background-image: url("../assets/icons/instagram.svg");
+}
+
+.icons .linkedin {
+   background-image: url("../assets/icons/linkedin.svg");
+}
+
+.icons .youtube {
+   background-image: url("../assets/icons/youtube.svg");
+}
+
+header nav {
+   background-color: var(--just-white);
+   display: flex;
+   justify-content: space-between;
+   padding: 0 10px;
+}
+
+.nav-logo-container {
+   display: grid;
+   place-content: center;
+}
+
+.nav-logo-container a {
+   display: inline-block;
+   background-image: url("../assets/icons/logo.png");
+   width: 120px;
+   height: 35px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.nav-profile-link {
+   display: grid;
+   place-content: center;
+   font-size: 1.2rem;
+   padding-right: 15px;
+   text-decoration: underline;
+}
+
+/* Main de index.html */
+
+.main-image {
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-image: url("../assets/image/cover.jpg");
+   height: calc(100vh - 100px);
+   position: relative;
+   text-align: center;
+}
+
+.main-image h1 {
+   position: absolute;
+   top: 150px;
+   font-size: 2.6rem;
+   color: var(--just-white);
+   line-height: 3.6rem;
+   width: 100%;
+}
+
+.main-image button {
+   color: var(--just-black);
+   background-color: var(--principal-green);
+   width: 100px;
+   height: 40px;
+   position: absolute;
+   top: 300px;
+   left: calc(50% - 50px);
+   font-weight: bold;
+   font-size: 1.6rem;
+}
+
+/* Main de blogs.html */
+
+.main-blogs {
+   width: 100%;
+   padding: 20px;
+}
+
+.main-blogs .blogs-notice {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+.blogs-notice h2 {
+   font-size: 2.4rem;
+   margin-bottom: 15px;
+}
+
+.blogs-notice div {
+   display: grid;
+   grid-template-rows: 1fr .5fr;
+   height: 450px;
+   width: 100%;
+}
+
+.blogs-notice div figure {
+   height: 300px;
+   width: 100%;
+
+}
+
+.blogs-notice div figure img {
+   height: 100%;
+   width: 100%;
+
+}
+
+.blogs-notice div div {
+   height: 150px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   place-self: center;
+}
+
+.blogs-notice div div h3 {
+   font-size: 1.8rem;
+}
+
+.blogs-notice div div p {
+   font-size: 1.2rem;
+   line-height: 1.8rem;
+}
+
+.blogs-notice div div button {
+   border: 1px solid var(--principal-green);
+   background-color: transparent;
+   width: 100px;
+   height: 30px;
+   margin-top: 8px;
+}
+
+.main-blogs .blogs-gallery {
+   margin-top: 24px;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   margin-bottom: 8px;
+}
+
+.blogs-gallery h2 {
+   font-size: 2.3rem;
+   margin-bottom: 15px;
+}
+
+.blogs-gallery div {
+   display: grid;
+   grid-template-rows: repeat(3, 1fr);
+   grid-template-columns: repeat(2, 1fr);
+   height: 1050px;
+   width: 100%;
+   gap: 5px;
+}
+
+.gallery-cards .card-item {
+   display: flex;
+   flex-direction: column;
+   height: 350px;
+   justify-content: center;
+   align-items: center;
+}
+
+.card-item figure {
+   width: 100%;
+}
+
+.card-item figure img {
+   width: 100%;
+   height: 100%;
+}
+
+.card-item div {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.card-item div h3 {
+   font-size: 1.6rem;
+}
+
+.card-item div p {
+   font-size: 1.2rem;
+   line-height: 1.6rem;
+}
+
+.card-item div button {
+   border: 1px solid var(--principal-green);
+   background-color: transparent;
+   width: 100px;
+   height: 30px;
+}
+
+/* Footer */
+
+footer {
+   width: 100%;
+   color: var(--just-white);
+}
+
+footer .footer-color {
+   width: 100%;
+   height: 20px;
+   background-color: var(--principal-green);
+}
+
+footer .footer-details {
+   font-size: 1.2rem;
+   width: 100%;
+   height: 35px;
+   background-color: var(--grey);
+   display: flex;
+   place-items: center;
+   place-content: center;
+}
+
+@media (min-width : 768px) {
+   header .header-icons-container {
+      justify-content: flex-end;
+   }
+
+   .icons {
+      margin-right: 25px;
+   }
+}
